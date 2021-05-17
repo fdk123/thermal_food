@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "thermal:tea"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "item": "minecraft:ice"
+    }
+  },
+  "result": {
+    "item": "thermal_food:cold_tea",
+    "count": 3
+  }
+}
+

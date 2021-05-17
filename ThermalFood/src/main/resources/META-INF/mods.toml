@@ -1,0 +1,51 @@
+modLoader = "javafml"
+loaderVersion = "[34,)"
+issueTrackerURL = ""
+license=""
+
+[[mods]]
+modId = "thermal_food"
+version = "${file.jarVersion}"
+displayName = "Thermal Food"
+#displayURL = ""
+logoFile = "logo.png"
+credits = "Street Ghost"
+authors = "fdk123 and Simortal"
+description = '''
+Addon for Thermal Cultivation
+Thanks to Team CoFH and King Lemming with his work for Thermal family!
+'''
+[[dependencies.thermal_food]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.16.3,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.thermal_food]]
+modId = "forge"
+mandatory = true
+versionRange = "[35.1.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.thermal_food]]
+modId = "cofh_core"
+mandatory = true
+versionRange = "[1.2,1.3]"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.thermal_food]]
+modId = "thermal"
+mandatory = true
+versionRange = "[1.2,1.3]"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.thermal_food]]
+modId = "thermal_cultivation"
+mandatory = true
+versionRange = "[1.2,1.3]"
+ordering = "AFTER"
+side = "BOTH"

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EAF",
+    "DCD",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "thermal:rice"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    },
+    "C": {
+      "item": "minecraft:cooked_mutton"
+    },
+    "D": {
+      "item": "thermal:onion"
+    },
+    "E": {
+      "item": "thermal:bell_pepper"
+    },
+    "F": {
+      "item": "minecraft:carrot"
+    }
+  },
+  "result": {
+    "item": "thermal_food:pilaf"
+  }
+}
+

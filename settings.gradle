@@ -1,0 +1,17 @@
+rootProject.name = '1.16'
+include 'CoFHCore'
+
+include 'ArchersParadox'
+include 'Ensorcellation'
+include 'OMGourd'
+include "ThermalFood"
+include 'ThermalCore'
+include 'ThermalCultivation'
+include 'ThermalDynamics'
+include 'ThermalExpansion'
+include 'ThermalHorizons'
+include 'ThermalInnovation'
+include 'ThermalLocomotion'
+
+
+include 'Workspace'

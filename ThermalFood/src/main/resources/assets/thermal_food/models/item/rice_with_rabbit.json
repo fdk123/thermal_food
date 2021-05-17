@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thermal_food:item/foods/rice_with_rabbit"
+  }
+}

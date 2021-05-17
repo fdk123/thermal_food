@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BCB",
+    "AAA",
+    "BBB"
+  ],
+  "key": {
+    "A": {
+      "item": "thermal:rice"
+    },
+    "B": {
+      "item": "minecraft:dried_kelp"
+    },
+    "C": {
+      "item": "minecraft:cooked_salmon"
+    }
+  },
+  "result": {
+    "item": "thermal_food:sushi_roll",
+    "count": 6
+  }
+}
+

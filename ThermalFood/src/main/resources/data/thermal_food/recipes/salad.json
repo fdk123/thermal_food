@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACD",
+    "EFG",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "thermal:bell_pepper"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    },
+    "C": {
+      "item": "thermal:onion"
+    },
+    "D": {
+      "item": "thermal:radish"
+    },
+    "E": {
+      "item": "thermal:spinach"
+    },
+    "F": {
+      "item": "thermal:tomato"
+    },
+    "G": {
+      "item": "thermal:sadiroot"
+    }
+  },
+  "result": {
+    "item": "thermal_food:salad"
+  }
+}
+

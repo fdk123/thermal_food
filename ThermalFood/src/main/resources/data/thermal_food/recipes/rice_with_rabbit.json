@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ACA",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "thermal:rice"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    },
+    "C": {
+      "item": "minecraft:cooked_rabbit"
+    }
+  },
+  "result": {
+    "item": "thermal_food:rice_with_rabbit"
+  }
+}
+

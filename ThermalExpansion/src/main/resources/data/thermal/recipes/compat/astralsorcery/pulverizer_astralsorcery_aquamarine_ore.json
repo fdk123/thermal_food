@@ -1,0 +1,23 @@
+{
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "item": "astralsorcery:aquarmarine_sand_ore"
+  },
+  "result": [
+    {
+      "item": "astralsorcery:aquarmarine",
+      "chance": 6.0
+    },
+    {
+      "item": "minecraft:sand",
+      "chance": 0.2
+    }
+  ],
+  "experience": 0.2,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "astralsorcery"
+    }
+  ]
+}

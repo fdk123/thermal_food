@@ -1,0 +1,213 @@
+buildscript {
+    repositories {
+        maven { url 'https://files.minecraftforge.net/maven' }
+        maven { url 'https://plugins.gradle.org/m2/' }
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+    }
+}
+apply plugin: 'net.minecraftforge.gradle'
+// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+
+repositories {
+    maven { // TOP
+        name 'tterrag maven'
+        url 'https://maven.tterrag.com/'
+    }
+    maven { // JEI
+        url 'http://dvs1.progwml6.com/files/maven'
+    }
+    maven { // Patchouli
+        url 'https://maven.blamejared.com'
+    }
+    maven {
+        url 'https://modmaven.dev'
+    }
+    maven {
+        name 'CurseForge'
+        url 'https://minecraft.curseforge.com/api/maven/'
+    }
+}
+
+version = '1.0'
+group = 'com.yourname.modid' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'modid'
+
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
+
+minecraft {
+    mappings channel: 'snapshot', version: "${mcp_mappings}"
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+            ideaModule "${rootProject.name}.${project.name}.main"
+
+            // Recommended logging data for a userdev environment
+            // property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            // property 'forge.logging.console.level', 'debug'
+
+            property 'mixin.env.disableRefMap', 'true'
+
+            mods {
+                CoFHCore {
+                    source project(':CoFHCore').sourceSets.main
+                }
+
+                ArchersParadox {
+                    source project(':ArchersParadox').sourceSets.main
+                }
+                Ensorcellation {
+                    source project(':Ensorcellation').sourceSets.main
+                }
+                OMGourd {
+                    source project(':OMGourd').sourceSets.main
+                }
+                ThermalFood {
+                    source project(':ThermalFood').sourceSets.main
+                }
+                ThermalCore {
+                    source project(':ThermalCore').sourceSets.main
+                }
+                ThermalCultivation {
+                    source project(':ThermalCultivation').sourceSets.main
+                }
+                ThermalDynamics {
+                    source project(':ThermalDynamics').sourceSets.main
+                }
+                ThermalExpansion {
+                    source project(':ThermalExpansion').sourceSets.main
+                }
+                ThermalHorizons {
+                    source project(':ThermalHorizons').sourceSets.main
+                }
+                ThermalInnovation {
+                    source project(':ThermalInnovation').sourceSets.main
+                }
+                ThermalLocomotion {
+                    source project(':ThermalLocomotion').sourceSets.main
+                }
+
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+            ideaModule "${rootProject.name}.${project.name}.main"
+
+            // Recommended logging data for a userdev environment
+            // property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            // property 'forge.logging.console.level', 'debug'
+
+            property 'mixin.env.disableRefMap', 'true'
+
+            mods {
+                CoFHCore {
+                    source project(':CoFHCore').sourceSets.main
+                }
+
+                ArchersParadox {
+                    source project(':ArchersParadox').sourceSets.main
+                }
+                Ensorcellation {
+                    source project(':Ensorcellation').sourceSets.main
+                }
+                OMGourd {
+                    source project(':OMGourd').sourceSets.main
+                }
+                ThermalFood {
+                    source project(':ThermalFood').sourceSets.main
+                }
+
+                ThermalCore {
+                    source project(':ThermalCore').sourceSets.main
+                }
+                ThermalCultivation {
+                    source project(':ThermalCultivation').sourceSets.main
+                }
+                ThermalDynamics {
+                    source project(':ThermalDynamics').sourceSets.main
+                }
+                ThermalExpansion {
+                    source project(':ThermalExpansion').sourceSets.main
+                }
+                ThermalHorizons {
+                    source project(':ThermalHorizons').sourceSets.main
+                }
+                ThermalInnovation {
+                    source project(':ThermalInnovation').sourceSets.main
+                }
+                ThermalLocomotion {
+                    source project(':ThermalLocomotion').sourceSets.main
+                }
+
+            }
+        }
+    }
+}
+
+dependencies {
+
+    minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
+
+    runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${patchouli_version}")
+//     runtimeOnly fg.deobf("blusunrize.immersiveengineering:ImmersiveEngineering:${mc_version}-${ie_version}")
+
+    compile project(':CoFHCore')
+
+    compile project(':ArchersParadox')
+    compile project(':Ensorcellation')
+    compile project(':OMGourd')
+    compile project(':ThermalFood')
+
+    compile project(':ThermalCore')
+    compile project(':ThermalCultivation')
+    compile project(':ThermalDynamics')
+    compile project(':ThermalExpansion')
+    compile project(':ThermalHorizons')
+    compile project(':ThermalInnovation')
+    compile project(':ThermalLocomotion')
+}
+
+jar {
+    manifest {
+        attributes([
+                "Specification-Title"     : "examplemod",
+                "Specification-Vendor"    : "examplemodsareus",
+                "Specification-Version"   : "1", // We are version 1 of ourselves
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : "${version}",
+                "Implementation-Vendor"   : "examplemodsareus",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+def reobfFile = file("$buildDir/reobfJar/output.jar")
+def reobfArtifact = artifacts.add('default', reobfFile) {
+    type 'jar'
+    builtBy 'reobfJar'
+}
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifact reobfArtifact
+        }
+    }
+    repositories {
+        maven {
+            url "file:///${project.projectDir}/mcmodsrepo"
+        }
+    }
+}

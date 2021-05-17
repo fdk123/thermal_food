@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EDE",
+    "CBC",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:wheat"
+    },
+    "B": {
+      "item": "minecraft:beef"
+    },
+    "C": {
+      "item": "minecraft:egg"
+    },
+    "D": {
+      "item": "thermal:onion"
+    },
+    "E": {
+      "item": "thermal:rice"
+    }
+  },
+  "result": {
+    "item": "thermal_food:kulebyaka_with_meat",
+    "count": 3
+  }
+}
+

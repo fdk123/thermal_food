@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ADA",
+    "CAE",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "thermal:rice"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    },
+    "C": {
+      "item": "thermal:onion"
+    },
+    "D": {
+      "item": "thermal_food:mayonnaise"
+    },
+    "E": {
+      "item": "minecraft:cod"
+    }
+  },
+  "result": {
+    "item": "thermal_food:rice_salad"
+  }
+}
+

@@ -1,0 +1,65 @@
+{
+  "itemGroup.thermal_food": "Thermal Food",
+
+  "_comment": "fdk123 foods",
+  "_comment": "  \"item.thermal.\": \"\",  ",
+  "_comment": "CHEESE",
+  "item.thermal_food.sulguni_cheese": "Sulguni cheese",
+  "item.thermal_food.adyghe_cheese": "Adyghe cheese",
+  "item.thermal_food.feta_cheese": "Feta cheese",
+  "item.thermal_food.mozzarella_cheese": "Mozzarella cheese",
+  "item.thermal_food.sour_cream": "Sour cream",
+  "item.thermal_food.mayonnaise": "Mayonnaise",
+
+  "_comment": "PIES",
+  "item.thermal_food.khachapuri": "Khachapuri",
+  "item.thermal_food.kulebyaka_with_meat": "Kulebyaka with meat",
+  "item.thermal_food.kulebyaka_with_cod": "Kulebyaka with cod",
+  "item.thermal_food.kulebyaka_with_salmon": "Kulebyaka with salmon",
+
+  "_comment": "ICECREAM",
+  "item.thermal_food.icecream": "Vanilla ice cream",
+  "item.thermal_food.icecream_with_sweet_berries": "Ice cream with sweet berries",
+  "item.thermal_food.icecream_with_strawberry": "Ice cream with strawberry",
+  "item.thermal_food.icecream_with_chocolate": "Ice cream with chocolate",
+
+  "_comment": "FRENCH",
+  "item.thermal_food.julienne": "Julienne",
+  "item.thermal_food.salad": "Salad",
+  "item.thermal_food.rice_salad": "Rice salad",
+
+  "_comment": "ITALIAN",
+  "item.thermal_food.pizza": "Pizza",
+  "item.thermal_food.pasta": "Pasta",
+
+  "_comment": "ASIAN",
+  "item.thermal_food.pita": "Pita",
+  "item.thermal_food.rice_with_rabbit": "Rice with rabbit",
+  "item.thermal_food.rice_with_chicken": "Rice with chicken",
+  "item.thermal_food.shaverma": "Shaverma",
+  "item.thermal_food.pilaf": "Pilaf",
+  "item.thermal_food.sushi_roll": "Sushi roll",
+
+  "_comment": "DRINKS",
+  "item.thermal_food.black_tea": "Black tea",
+  "item.thermal_food.black_tea_with_berries": "Black tea with berries",
+  "item.thermal_food.cold_tea": "Could tea",
+  "item.thermal_food.coffee_cup": "Coffee cup",
+  "item.thermal_food.iced_coffee": "Iced coffee",
+  "item.thermal_food.cappuccino": "Cappuccino",
+  "item.thermal_food.cacao": "Cocoa cup",
+
+  "_comment": "DESCs",
+
+  "item.thermal_food.pizza.desc": "Be like mafia!",
+  "item.thermal_food.rice_with_rabbit.desc": "Simple, but delicious food",
+  "item.thermal_food.shaverma.desc": "Food of gods!",
+  "item.thermal_food.pilaf.desc": "Royal food",
+  "item.thermal_food.black_tea.desc": "Good old...",
+  "item.thermal_food.cold_tea.decs": "Heavenly drink",
+  "item.thermal_food.coffee_cup.desc": "Good morning!",
+  "item.thermal_food.cappuccino.desc": "Italian classic",
+  "item.thermal_food.cacao.desc": "Sweet drink",
+
+  "_comment": "fdk123 foods end"
+}

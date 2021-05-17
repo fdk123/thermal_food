@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "CED",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "thermal_food:mozzarella_cheese"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    },
+    "C": {
+      "item": "minecraft:red_mushroom"
+    },
+    "D": {
+      "item": "minecraft:brown_mushroom"
+    },
+    "E": {
+      "item": "thermal_food:sour_cream"
+    }
+  },
+  "result": {
+    "item": "thermal_food:julienne"
+  }
+}
+

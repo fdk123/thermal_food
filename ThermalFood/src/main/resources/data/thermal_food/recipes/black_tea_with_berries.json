@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CAD",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "thermal:tea"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "item": "minecraft:sweet_berries"
+    },
+    "D": {
+      "item": "thermal:strawberry"
+    }
+  },
+  "result": {
+    "item": "thermal_food:black_tea_with_berries",
+    "count": 3
+  }
+}
+

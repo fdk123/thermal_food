@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "DCD",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:ice"
+    },
+    "B": {
+      "item": "minecraft:wheat"
+    },
+    "C": {
+      "item": "minecraft:milk_bucket"
+    },
+    "D": {
+      "item": "thermal:strawberry"
+    }
+  },
+  "result": {
+    "item": "thermal_food:icecream_with_strawberry",
+    "count": 4
+  }
+}
+

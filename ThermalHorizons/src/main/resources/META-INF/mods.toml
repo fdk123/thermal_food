@@ -1,0 +1,45 @@
+modLoader = "javafml"
+loaderVersion = "[34,)"
+issueTrackerURL = "https://github.com/cofh/feedback"
+license = "CoFH - Don't Be A Jerk (Learn, Don't Steal)"
+
+[[mods]]
+modId = "thermal_horizons"
+version = "${file.jarVersion}"
+displayName = "Thermal Horizons"
+displayURL = "https://teamcofh.com/"
+logoFile = "logo.png"
+credits = "Team CoFH"
+authors = "King Lemming"
+description = '''
+Expanding the world Thermally!
+
+Contains additional biomes and world features.
+'''
+[[dependencies.thermal_horizons]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.16.3,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.thermal_horizons]]
+modId = "forge"
+mandatory = true
+versionRange = "[35.1.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.thermal_horizons]]
+modId = "cofh_core"
+mandatory = true
+versionRange = "[1.2,1.3]"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.thermal_horizons]]
+modId = "thermal"
+mandatory = true
+versionRange = "[1.2,1.3]"
+ordering = "AFTER"
+side = "BOTH"

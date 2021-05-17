@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DED",
+    "GCF",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "thermal_food:pita"
+    },
+    "B": {
+      "item": "thermal_food:mayonnaise"
+    },
+    "C": {
+      "item": "minecraft:cooked_chicken"
+    },
+    "D": {
+      "item": "thermal:tomato"
+    },
+    "E": {
+      "item": "thermal:onion"
+    },
+    "F": {
+      "item": "minecraft:carrot"
+    },
+    "G": {
+      "item": "thermal:bell_pepper"
+    }
+  },
+  "result": {
+    "item": "thermal_food:shaverma"
+  }
+}
+

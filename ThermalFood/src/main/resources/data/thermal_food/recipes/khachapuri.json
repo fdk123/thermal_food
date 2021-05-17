@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "CDC",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:wheat"
+    },
+    "B": {
+      "item": "minecraft:egg"
+    },
+    "C": {
+      "item": "thermal_food:adyghe_cheese"
+    },
+    "D": {
+      "item": "thermal_food:sulguni_cheese"
+    }
+  },
+  "result": {
+    "item": "thermal_food:khachapuri",
+    "count": 3
+  }
+}
+

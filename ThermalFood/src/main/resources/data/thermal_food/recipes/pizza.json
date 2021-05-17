@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DCE",
+    "AAA",
+    "BBB"
+  ],
+  "key": {
+    "A": {
+      "item": "thermal:tomato"
+    },
+    "B": {
+      "item": "minecraft:wheat"
+    },
+    "C": {
+      "item": "thermal_food:mozzarella_cheese"
+    },
+    "D": {
+      "item": "thermal:bell_pepper"
+    },
+    "E": {
+      "item": "thermal:onion"
+    }
+  },
+  "result": {
+    "item": "thermal_food:pizza",
+    "count": 4
+  }
+}
+

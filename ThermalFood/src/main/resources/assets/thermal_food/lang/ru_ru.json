@@ -1,0 +1,61 @@
+{
+  "itemGroup.thermal_food": "Thermal Food",
+
+  "_comment": "fdk123 foods",
+  "_comment": "CHEESE",
+  "item.thermal_food.sulguni_cheese": "Сыр сулугуни",
+  "item.thermal_food.adyghe_cheese": "Адыгейский сыр",
+  "item.thermal_food.feta_cheese": "Сыр фета",
+  "item.thermal_food.mozzarella_cheese": "Сыр моцарелла",
+  "item.thermal_food.sour_cream": "Сметана",
+  "item.thermal_food.mayonnaise": "Майонез",
+
+  "_comment": "PIES",
+  "item.thermal_food.khachapuri": "Хачапури",
+  "item.thermal_food.kulebyaka_with_meat": "Кулебяка с мясом",
+  "item.thermal_food.kulebyaka_with_cod": "Кулебяка с треской",
+  "item.thermal_food.kulebyaka_with_salmon": "Кулебяка с лососем",
+
+  "_comment": "ICECREAM",
+  "item.thermal_food.icecream": "Ванильное мороженое",
+  "item.thermal_food.icecream_with_sweet_berries": "Мороженое с сладкими ягодами",
+  "item.thermal_food.icecream_with_strawberry": "Мороженое с клубникой",
+  "item.thermal_food.icecream_with_chocolate": "Мороженое с шоколадной крошкой",
+
+  "_comment": "FRENCH",
+  "item.thermal_food.julienne": "Жульен",
+  "item.thermal_food.salad": "Салат",
+  "item.thermal_food.rice_salad": "Салат с рисом",
+
+  "_comment": "ITALIAN",
+  "item.thermal_food.pizza": "Пицца",
+  "item.thermal_food.pizza.desc": "Будь как мафия!",
+  "item.thermal_food.pasta": "Паста",
+
+  "_comment": "ASIAN",
+  "item.thermal_food.pita": "Лаваш",
+  "item.thermal_food.rice_with_rabbit": "Рис с кроликом",
+  "item.thermal_food.rice_with_rabbit.decs": "Простая, но вкусная еда",
+  "item.thermal_food.rice_with_chicken": "Рис с цыпленком",
+  "item.thermal_food.shaverma": "Шаверма",
+  "item.thermal_food.shaverma.desc": "Пища богов!",
+  "item.thermal_food.pilaf": "Плов",
+  "item.thermal_food.pilaf.desc": "Еда королей",
+  "item.thermal_food.sushi_roll": "Суши ролл",
+
+  "_comment": "DRINKS",
+  "item.thermal_food.black_tea": "Черный чай",
+  "item.thermal_food.black_tea.desc": "Старый добрый...",
+  "item.thermal_food.black_tea_with_berries": "Черный чай с ягодами",
+  "item.thermal_food.cold_tea": "Холодный чай",
+  "item.thermal_food.cold_tea.decs": "Божественный напиток",
+  "item.thermal_food.coffee_cup": "Чашечка кофе",
+  "item.thermal_food.coffee_cup.desc": "Доброе утро!",
+  "item.thermal_food.iced_coffee": "Кофе глясе",
+  "item.thermal_food.cappuccino": "Капучино",
+  "item.thermal_food.cappuccino.desc": "Итальянская классика",
+  "item.thermal_food.cacao": "Чашечка какао",
+  "item.thermal_food.cacao.desc": "Сладкий напиток",
+
+  "_comment": "fdk123 foods end"
+}

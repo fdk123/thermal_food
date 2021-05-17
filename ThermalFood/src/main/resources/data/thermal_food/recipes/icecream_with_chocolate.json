@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "DCE",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:ice"
+    },
+    "B": {
+      "item": "minecraft:wheat"
+    },
+    "C": {
+      "item": "minecraft:milk_bucket"
+    },
+    "D": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "E": {
+      "item": "thermal:peanut"
+    }
+  },
+  "result": {
+    "item": "thermal_food:icecream_with_chocolate",
+    "count": 4
+  }
+}
+

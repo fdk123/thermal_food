@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DEF",
+    "ACA",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "thermal:tomato"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    },
+    "C": {
+      "item": "minecraft:wheat"
+    },
+    "D": {
+      "item": "thermal:bell_pepper"
+    },
+    "E": {
+      "item": "thermal:onion"
+    },
+    "F": {
+      "item": "thermal:spinach"
+    }
+  },
+  "result": {
+    "item": "thermal_food:pasta"
+  }
+}
+

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "item": "thermal_food:adyghe_cheese",
+    "count": 3
+  }
+}
+

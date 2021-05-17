@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "thermal:coffee"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result": {
+    "item": "thermal_food:coffee_cup",
+    "count": 3
+  }
+}
+
