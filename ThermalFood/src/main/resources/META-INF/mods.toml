@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[34,)"
-issueTrackerURL = ""
-license=""
+issueTrackerURL = "https://github.com/fdk123/thermal_food/issues"
+license="All Rights Reserved"
 
 [[mods]]
 modId = "thermal_food"
