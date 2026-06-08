@@ -1,147 +1,130 @@
 package fdk123.ThermalFood.init;
-import static cofh.thermal.core.ThermalCore.ITEMS;
-import static cofh.thermal.core.util.RegistrationHelper.registerCropAndSeed;
-import static cofh.thermal.cultivation.init.TCulFoods.COFFEE;
-import static cofh.thermal.cultivation.init.TCulIDs.ID_COFFEE;
-import static cofh.thermal.cultivation.init.TCulIDs.ID_TEA;
-import cofh.core.item.ItemCoFH;
-import static cofh.thermal.lib.common.ThermalItemGroups.THERMAL_ITEMS;
-import static fdk123.ThermalFood.init.TFoodFoods.*;
-import static fdk123.ThermalFood.init.TFoodIDs.*;
-import fdk123.ThermalFood.data.TFoodGroup;
-import fdk123.ThermalFood.data.TFoodIcon;
 
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.*;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.level.Level;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
+import static fdk123.ThermalFood.ThermalFood.MOD_ID;
+import static fdk123.ThermalFood.init.TFoodFoods.*;
+import static fdk123.ThermalFood.init.TFoodIDs.*;
 
 public class TFoodItems {
-    public static final DeferredRegister<Item> ITEM = DeferredRegister.create(ForgeRegistries.ITEMS, "thermal_food");
-    public static final ItemGroup THERMAL_FOODS = new TFoodGroup("thermal_food", () -> new ItemStack(TFoodIcon.SHAVERMA));
 
-    //fdk123 food
-    //public static final RegistryObject<Item> = ITEM.register(ID_, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food( ).rarity(Rarity.UNCOMMON)));
-    //CHEESE
-    public static final RegistryObject<Item> SULGUNI_CHEESE = ITEM.register(ID_SULGUNI_CHEESE, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.SULGUNI_CHEESE).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> ADYGHE_CHEESE = ITEM.register(ID_ADYGHE_CHEESE, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.ADYGHE_CHEESE).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> FETA_CHEESE = ITEM.register(ID_FETA_CHEESE, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.FETA_CHEESE).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> MOZZARELLA_CHEESE = ITEM.register(ID_MOZZARELLA_CHEESE, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.MOZZARELLA_CHEESE).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> SOUR_CREAM = ITEM.register(ID_SOUR_CREAM, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.SOUR_CREAM).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> MAYONNAISE = ITEM.register(ID_MAYONNAISE, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.MAYONNAISE).rarity(Rarity.UNCOMMON)));
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
 
-    //PIE
-    public static final RegistryObject<Item> KHACHAPURI = ITEM.register(ID_KHACHAPURI, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.KHACHAPURI).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> KULEBYAKA_WITH_MEAT = ITEM.register(ID_KULEBYAKA_WITH_MEAT, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.KULEBYAKA_WITH_MEAT).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> KULEBYAKA_WITH_COD = ITEM.register(ID_KULEBYAKA_WITH_COD, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.KULEBYAKA_WITH_COD).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> KULEBYAKA_WITH_SALMON = ITEM.register(ID_KULEBYAKA_WITH_SALMON, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.KULEBYAKA_WITH_SALMON).rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> SULGUNI_CHEESE = ITEMS.register(ID_SULGUNI_CHEESE, () -> food(SULGUNI_CHEESE_FOOD));
+    public static final RegistryObject<Item> ADYGHE_CHEESE = ITEMS.register(ID_ADYGHE_CHEESE, () -> food(ADYGHE_CHEESE_FOOD));
+    public static final RegistryObject<Item> FETA_CHEESE = ITEMS.register(ID_FETA_CHEESE, () -> food(FETA_CHEESE_FOOD));
+    public static final RegistryObject<Item> MOZZARELLA_CHEESE = ITEMS.register(ID_MOZZARELLA_CHEESE, () -> food(MOZZARELLA_CHEESE_FOOD));
+    public static final RegistryObject<Item> SOUR_CREAM = ITEMS.register(ID_SOUR_CREAM, () -> food(SOUR_CREAM_FOOD));
+    public static final RegistryObject<Item> MAYONNAISE = ITEMS.register(ID_MAYONNAISE, () -> food(MAYONNAISE_FOOD));
 
-    //ICECREAM
-    public static final RegistryObject<Item> ICECREAM = ITEM.register(ID_ICECREAM, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.ICECREAM).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> ICECREAM_WITH_SWEET_BERRIES = ITEM.register(ID_ICECREAM_WITH_SWEET_BERRIES, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.ICECREAM_WITH_SWEET_BERRIES).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> ICECREAM_WITH_STRAWBERRY = ITEM.register(ID_ICECREAM_WITH_STRAWBERRY, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.ICECREAM_WITH_STRAWBERRY).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> ICECREAM_WITH_CHOCOLATE = ITEM.register(ID_ICECREAM_WITH_CHOCOLATE, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.ICECREAM_WITH_CHOCOLATE).rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> KHACHAPURI = ITEMS.register(ID_KHACHAPURI, () -> food(KHACHAPURI_FOOD));
+    public static final RegistryObject<Item> KULEBYAKA_WITH_MEAT = ITEMS.register(ID_KULEBYAKA_WITH_MEAT, () -> food(KULEBYAKA_WITH_MEAT_FOOD));
+    public static final RegistryObject<Item> KULEBYAKA_WITH_COD = ITEMS.register(ID_KULEBYAKA_WITH_COD, () -> food(KULEBYAKA_WITH_COD_FOOD));
+    public static final RegistryObject<Item> KULEBYAKA_WITH_SALMON = ITEMS.register(ID_KULEBYAKA_WITH_SALMON, () -> food(KULEBYAKA_WITH_SALMON_FOOD));
 
-    //french
-    public static final RegistryObject<Item> JULIENNE = ITEM.register(ID_JULIENNE, () -> new Item(new Item.Properties().maxStackSize(1).group(THERMAL_FOODS).food(TFoodFoods.JULIENNE).rarity(Rarity.UNCOMMON)) {
+    public static final RegistryObject<Item> ICECREAM = ITEMS.register(ID_ICECREAM, () -> food(ICECREAM_FOOD));
+    public static final RegistryObject<Item> ICECREAM_WITH_SWEET_BERRIES = ITEMS.register(ID_ICECREAM_WITH_SWEET_BERRIES, () -> food(ICECREAM_WITH_SWEET_BERRIES_FOOD));
+    public static final RegistryObject<Item> ICECREAM_WITH_STRAWBERRY = ITEMS.register(ID_ICECREAM_WITH_STRAWBERRY, () -> food(ICECREAM_WITH_STRAWBERRY_FOOD));
+    public static final RegistryObject<Item> ICECREAM_WITH_CHOCOLATE = ITEMS.register(ID_ICECREAM_WITH_CHOCOLATE, () -> food(ICECREAM_WITH_CHOCOLATE_FOOD));
 
-        @Override
-        public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
+    public static final RegistryObject<Item> JULIENNE = ITEMS.register(ID_JULIENNE, () -> bowlFood(JULIENNE_FOOD));
+    public static final RegistryObject<Item> SALAD = ITEMS.register(ID_SALAD, () -> bowlFood(SALAD_FOOD));
+    public static final RegistryObject<Item> RICE_SALAD = ITEMS.register(ID_RICE_SALAD, () -> bowlFood(RICE_SALAD_FOOD));
 
-            ItemStack itemstack = super.onItemUseFinish(stack, worldIn, entityLiving);
-            return entityLiving instanceof PlayerEntity && ((PlayerEntity) entityLiving).abilities.isCreativeMode ? itemstack : new ItemStack(Items.BOWL);
-        }
-    });
-    public static final RegistryObject<Item> SALAD = ITEM.register(ID_SALAD, () -> new Item(new Item.Properties().maxStackSize(1).group(THERMAL_FOODS).food(TFoodFoods.SALAD).rarity(Rarity.UNCOMMON)) {
+    public static final RegistryObject<Item> PIZZA = ITEMS.register(ID_PIZZA, () -> food(PIZZA_FOOD));
+    public static final RegistryObject<Item> PASTA = ITEMS.register(ID_PASTA, () -> bowlFood(PASTA_FOOD));
 
-        @Override
-        public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
+    public static final RegistryObject<Item> PITA = ITEMS.register(ID_PITA, () -> food(PITA_FOOD));
+    public static final RegistryObject<Item> RICE_WITH_RABBIT = ITEMS.register(ID_RICE_WITH_RABBIT, () -> bowlFood(RICE_WITH_RABBIT_FOOD));
+    public static final RegistryObject<Item> RICE_WITH_CHICKEN = ITEMS.register(ID_RICE_WITH_CHICKEN, () -> bowlFood(RICE_WITH_CHICKEN_FOOD));
+    public static final RegistryObject<Item> SHAVERMA = ITEMS.register(ID_SHAVERMA, () -> food(SHAVERMA_FOOD));
+    public static final RegistryObject<Item> PILAF = ITEMS.register(ID_PILAF, () -> bowlFood(PILAF_FOOD));
+    public static final RegistryObject<Item> SUSHI_ROLL = ITEMS.register(ID_SUSHI_ROLL, () -> food(SUSHI_ROLL_FOOD));
 
-            ItemStack itemstack = super.onItemUseFinish(stack, worldIn, entityLiving);
-            return entityLiving instanceof PlayerEntity && ((PlayerEntity) entityLiving).abilities.isCreativeMode ? itemstack : new ItemStack(Items.BOWL);
-        }
-    });
-    public static final RegistryObject<Item> RICE_SALAD = ITEM.register(ID_RICE_SALAD, () -> new Item(new Item.Properties().maxStackSize(1).group(THERMAL_FOODS).food(TFoodFoods.RICE_SALAD).rarity(Rarity.UNCOMMON)) {
+    public static final RegistryObject<Item> BLACK_TEA = ITEMS.register(ID_BLACK_TEA, () -> food(BLACK_TEA_FOOD));
+    public static final RegistryObject<Item> BLACK_TEA_WITH_BERRIES = ITEMS.register(ID_BLACK_TEA_WITH_BERRIES, () -> food(BLACK_TEA_WITH_BERRIES_FOOD));
+    public static final RegistryObject<Item> COLD_TEA = ITEMS.register(ID_COLD_TEA, () -> food(COLD_TEA_FOOD));
+    public static final RegistryObject<Item> COFFEE_CUP = ITEMS.register(ID_COFFEE_CUP, () -> food(COFFEE_CUP_FOOD));
+    public static final RegistryObject<Item> ICED_COFFEE = ITEMS.register(ID_ICED_COFFEE, () -> food(ICED_COFFEE_FOOD));
+    public static final RegistryObject<Item> CAPPUCCINO = ITEMS.register(ID_CAPPUCCINO, () -> food(CAPPUCCINO_FOOD));
+    public static final RegistryObject<Item> CACAO = ITEMS.register(ID_CACAO, () -> food(CACAO_FOOD));
 
-        @Override
-        public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
+    public static final RegistryObject<CreativeModeTab> THERMAL_FOODS = CREATIVE_TABS.register("thermal_food", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.thermal_food"))
+            .icon(() -> new ItemStack(SHAVERMA.get()))
+            .displayItems((parameters, output) -> {
+                output.accept(SULGUNI_CHEESE.get());
+                output.accept(ADYGHE_CHEESE.get());
+                output.accept(FETA_CHEESE.get());
+                output.accept(MOZZARELLA_CHEESE.get());
+                output.accept(SOUR_CREAM.get());
+                output.accept(MAYONNAISE.get());
+                output.accept(KHACHAPURI.get());
+                output.accept(KULEBYAKA_WITH_MEAT.get());
+                output.accept(KULEBYAKA_WITH_COD.get());
+                output.accept(KULEBYAKA_WITH_SALMON.get());
+                output.accept(ICECREAM.get());
+                output.accept(ICECREAM_WITH_SWEET_BERRIES.get());
+                output.accept(ICECREAM_WITH_STRAWBERRY.get());
+                output.accept(ICECREAM_WITH_CHOCOLATE.get());
+                output.accept(JULIENNE.get());
+                output.accept(SALAD.get());
+                output.accept(RICE_SALAD.get());
+                output.accept(PIZZA.get());
+                output.accept(PASTA.get());
+                output.accept(PITA.get());
+                output.accept(RICE_WITH_RABBIT.get());
+                output.accept(RICE_WITH_CHICKEN.get());
+                output.accept(SHAVERMA.get());
+                output.accept(PILAF.get());
+                output.accept(SUSHI_ROLL.get());
+                output.accept(BLACK_TEA.get());
+                output.accept(BLACK_TEA_WITH_BERRIES.get());
+                output.accept(COLD_TEA.get());
+                output.accept(COFFEE_CUP.get());
+                output.accept(ICED_COFFEE.get());
+                output.accept(CAPPUCCINO.get());
+                output.accept(CACAO.get());
+            })
+            .build());
 
-            ItemStack itemstack = super.onItemUseFinish(stack, worldIn, entityLiving);
-            return entityLiving instanceof PlayerEntity && ((PlayerEntity) entityLiving).abilities.isCreativeMode ? itemstack : new ItemStack(Items.BOWL);
-        }
-    });
-
-    //italian
-    public static final RegistryObject<Item> PIZZA = ITEM.register(ID_PIZZA, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.PIZZA).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> PASTA = ITEM.register(ID_PASTA, () -> new Item(new Item.Properties().maxStackSize(1).group(THERMAL_FOODS).food(TFoodFoods.PASTA).rarity(Rarity.UNCOMMON)) {
-
-        @Override
-        public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
-
-            ItemStack itemstack = super.onItemUseFinish(stack, worldIn, entityLiving);
-            return entityLiving instanceof PlayerEntity && ((PlayerEntity) entityLiving).abilities.isCreativeMode ? itemstack : new ItemStack(Items.BOWL);
-        }
-    });
-
-    //asian
-    public static final RegistryObject<Item> PITA = ITEM.register(ID_PITA, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.PITA).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> RICE_WITH_RABBIT = ITEM.register(ID_RICE_WITH_RABBIT, () -> new Item(new Item.Properties().maxStackSize(1).group(THERMAL_FOODS).food(TFoodFoods.RICE_WITH_RABBIT).rarity(Rarity.UNCOMMON)) {
-
-        @Override
-        public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
-
-            ItemStack itemstack = super.onItemUseFinish(stack, worldIn, entityLiving);
-            return entityLiving instanceof PlayerEntity && ((PlayerEntity) entityLiving).abilities.isCreativeMode ? itemstack : new ItemStack(Items.BOWL);
-        }
-    });
-    public static final RegistryObject<Item> RICE_WITH_CHICKEN = ITEM.register(ID_RICE_WITH_CHICKEN, () -> new Item(new Item.Properties().maxStackSize(1).group(THERMAL_FOODS).food(TFoodFoods.RICE_WITH_CHICKEN).rarity(Rarity.UNCOMMON)) {
-
-        @Override
-        public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
-
-            ItemStack itemstack = super.onItemUseFinish(stack, worldIn, entityLiving);
-            return entityLiving instanceof PlayerEntity && ((PlayerEntity) entityLiving).abilities.isCreativeMode ? itemstack : new ItemStack(Items.BOWL);
-        }
-    });
-    public static final RegistryObject<Item> SHAVERMA = ITEM.register(ID_SHAVERMA, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.SHAVERMA).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> PILAF = ITEM.register(ID_PILAF, () -> new Item(new Item.Properties().maxStackSize(1).group(THERMAL_FOODS).food(TFoodFoods.PILAF).rarity(Rarity.UNCOMMON)) {
-
-        @Override
-        public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
-
-            ItemStack itemstack = super.onItemUseFinish(stack, worldIn, entityLiving);
-            return entityLiving instanceof PlayerEntity && ((PlayerEntity) entityLiving).abilities.isCreativeMode ? itemstack : new ItemStack(Items.BOWL);
-        }
-    });
-    public static final RegistryObject<Item> SUSHI_ROLL = ITEM.register(ID_SUSHI_ROLL, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.SUSHI_ROLL).rarity(Rarity.UNCOMMON)));
-
-    //drinks
-    public static final RegistryObject<Item> BLACK_TEA = ITEM.register(ID_BLACK_TEA, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.BLACK_TEA).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> BLACK_TEA_WITH_BERRIES = ITEM.register(ID_BLACK_TEA_WITH_BERRIES, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.BLACK_TEA_WITH_BERRIES).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> COLD_TEA = ITEM.register(ID_COLD_TEA, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.COLD_TEA).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> COFFEE_CUP = ITEM.register(ID_COFFEE_CUP, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.COFFEE_CUP).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> ICED_COFFEE = ITEM.register(ID_ICED_COFFEE, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.ICED_COFFEE).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> CAPPUCCINO = ITEM.register(ID_CAPPUCCINO, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.CAPPUCCINO).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> CACAO = ITEM.register(ID_CACAO, () -> new Item(new Item.Properties().group(THERMAL_FOODS).food(TFoodFoods.CACAO).rarity(Rarity.UNCOMMON)));
-    //fdk123 food end
-
-    public static void register() {
-        ITEM.register(FMLJavaModLoadingContext.get().getModEventBus());
-        registerCrops();
+    public static void register(IEventBus modEventBus) {
+        ITEMS.register(modEventBus);
+        CREATIVE_TABS.register(modEventBus);
     }
 
-    private static void registerCrops() {
-        registerCropAndSeed(ID_TEA);
-        ITEMS.register(ID_COFFEE, () -> new ItemCoFH(new Item.Properties().group(THERMAL_ITEMS).food(COFFEE)));
+    private static Item food(net.minecraft.world.food.FoodProperties food) {
+        return new Item(new Item.Properties().food(food).rarity(Rarity.UNCOMMON));
     }
 
-    private static void registerFoods() {
+    private static Item bowlFood(net.minecraft.world.food.FoodProperties food) {
+        return new BowlFoodItem(new Item.Properties().stacksTo(1).food(food).rarity(Rarity.UNCOMMON));
+    }
 
+    private static class BowlFoodItem extends Item {
 
+        private BowlFoodItem(Properties properties) {
+            super(properties);
+        }
+
+        @Override
+        public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
+            ItemStack result = super.finishUsingItem(stack, level, entity);
+            return entity instanceof Player player && player.getAbilities().instabuild ? result : new ItemStack(Items.BOWL);
+        }
     }
 }

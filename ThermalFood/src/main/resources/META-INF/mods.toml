@@ -1,51 +1,48 @@
 modLoader = "javafml"
-loaderVersion = "[34,)"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
 issueTrackerURL = "https://github.com/fdk123/thermal_food/issues"
-license="All Rights Reserved"
 
 [[mods]]
-modId = "thermal_food"
-version = "${file.jarVersion}"
-displayName = "Thermal Food"
-#displayURL = ""
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
 logoFile = "logo.png"
 credits = "Street Ghost"
-authors = "fdk123 and Simortal"
-description = '''
-Addon for Thermal Cultivation
-Thanks to Team CoFH and King Lemming with his work for Thermal family!
-'''
-[[dependencies.thermal_food]]
+authors = "${mod_authors}"
+description = '''${mod_description}'''
+
+[[dependencies.${mod_id}]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.16.3,)"
-ordering = "AFTER"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.thermal_food]]
+[[dependencies.${mod_id}]]
 modId = "forge"
 mandatory = true
-versionRange = "[35.1.0,)"
-ordering = "AFTER"
+versionRange = "${forge_version_range}"
+ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.thermal_food]]
+[[dependencies.${mod_id}]]
 modId = "cofh_core"
 mandatory = true
-versionRange = "[1.2,1.3]"
+versionRange = "${cofh_core_version_range}"
 ordering = "AFTER"
 side = "BOTH"
 
-[[dependencies.thermal_food]]
+[[dependencies.${mod_id}]]
 modId = "thermal"
 mandatory = true
-versionRange = "[1.2,1.3]"
+versionRange = "${thermal_version_range}"
 ordering = "AFTER"
 side = "BOTH"
 
-[[dependencies.thermal_food]]
+[[dependencies.${mod_id}]]
 modId = "thermal_cultivation"
 mandatory = true
-versionRange = "[1.2,1.3]"
+versionRange = "${thermal_cultivation_version_range}"
 ordering = "AFTER"
 side = "BOTH"
