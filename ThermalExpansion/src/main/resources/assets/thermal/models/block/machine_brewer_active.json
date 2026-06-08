@@ -1,6 +1,0 @@
-{
-  "parent": "thermal:block/machine_brewer",
-  "textures": {
-    "north": "thermal:block/machines/machine_brewer_active"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/stem_growth2",
-  "textures": {
-    "stem": "thermal:block/crops/frost_melon_stem"
-  }
-}

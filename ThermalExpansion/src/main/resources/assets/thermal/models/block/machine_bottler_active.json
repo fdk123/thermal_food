@@ -1,6 +1,0 @@
-{
-  "parent": "thermal:block/machine_bottler",
-  "textures": {
-    "north": "thermal:block/machines/machine_bottler_active"
-  }
-}

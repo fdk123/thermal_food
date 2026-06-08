@@ -1,6 +1,0 @@
-{
-  "parent": "thermal:block/machine_crafter",
-  "textures": {
-    "north": "thermal:block/machines/machine_crafter_active"
-  }
-}

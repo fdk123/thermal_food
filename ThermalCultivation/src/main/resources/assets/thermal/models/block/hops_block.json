@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "top": "thermal:block/storage/hops_block_top",
-    "bottom": "thermal:block/storage/hops_block_bottom",
-    "side": "thermal:block/storage/hops_block_side"
-  }
-}

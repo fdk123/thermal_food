@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "top": "thermal:block/storage/eggplant_block_top",
-    "bottom": "thermal:block/storage/eggplant_block_bottom",
-    "side": "thermal:block/storage/eggplant_block_side"
-  }
-}

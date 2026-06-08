@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "top": "thermal:block/storage/onion_block_top",
-    "bottom": "thermal:block/storage/onion_block_bottom",
-    "side": "thermal:block/storage/onion_block_side"
-  }
-}

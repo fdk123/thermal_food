@@ -1,8 +1,0 @@
-{
-  "type": "thermal:compression_fuel",
-  "ingredient": {
-    "fluid": "thermal:creosote",
-    "amount": 1000
-  },
-  "energy": 20000
-}
