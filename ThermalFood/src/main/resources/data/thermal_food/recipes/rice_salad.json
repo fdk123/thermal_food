@@ -7,19 +7,19 @@
   ],
   "key": {
     "A": {
-      "item": "thermal:rice"
+      "tag": "forge:grain/rice"
     },
     "B": {
       "item": "minecraft:bowl"
     },
     "C": {
-      "item": "thermal:onion"
+      "tag": "forge:crops/onion"
     },
     "D": {
       "item": "thermal_food:mayonnaise"
     },
     "E": {
-      "item": "minecraft:cod"
+      "tag": "forge:cooked_cod"
     }
   },
   "result": {

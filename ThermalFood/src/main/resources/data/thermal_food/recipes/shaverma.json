@@ -13,19 +13,19 @@
       "item": "thermal_food:mayonnaise"
     },
     "C": {
-      "item": "minecraft:cooked_chicken"
+      "tag": "forge:cooked_chicken"
     },
     "D": {
-      "item": "thermal:tomato"
+      "tag": "forge:crops/tomato"
     },
     "E": {
-      "item": "thermal:onion"
+      "tag": "forge:crops/onion"
     },
     "F": {
       "item": "minecraft:carrot"
     },
     "G": {
-      "item": "thermal:bell_pepper"
+      "tag": "forge:crops/bell_pepper"
     }
   },
   "result": {

@@ -13,13 +13,13 @@
       "item": "minecraft:wheat"
     },
     "C": {
-      "item": "minecraft:milk_bucket"
+      "tag": "forge:milk"
     },
     "D": {
       "item": "minecraft:cocoa_beans"
     },
     "E": {
-      "item": "thermal:peanut"
+      "tag": "forge:crops/peanut"
     }
   },
   "result": {

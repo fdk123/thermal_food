@@ -1,5 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:tag_empty",
+      "tag": "forge:dough/wheat"
+    }
+  ],
   "pattern": [
     "AAA",
     "AAA"

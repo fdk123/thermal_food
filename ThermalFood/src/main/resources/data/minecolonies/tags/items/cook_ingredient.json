@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "thermal_food:adyghe_cheese",
+    "thermal_food:feta_cheese",
+    "thermal_food:mayonnaise",
+    "thermal_food:mozzarella_cheese",
+    "thermal_food:pita",
+    "thermal_food:sour_cream",
+    "thermal_food:sulguni_cheese"
+  ]
+}

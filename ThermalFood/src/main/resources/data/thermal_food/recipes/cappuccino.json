@@ -6,10 +6,10 @@
   ],
   "key": {
     "A": {
-      "item": "thermal:coffee"
+      "tag": "forge:crops/coffee"
     },
     "B": {
-      "item": "minecraft:milk_bucket"
+      "tag": "forge:milk"
     },
     "C": {
       "item": "minecraft:sugar"

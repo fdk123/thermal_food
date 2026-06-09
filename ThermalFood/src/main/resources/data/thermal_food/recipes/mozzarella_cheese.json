@@ -6,7 +6,7 @@
   ],
   "key": {
     "A": {
-      "item": "minecraft:milk_bucket"
+      "tag": "forge:milk"
     }
   },
   "result": {

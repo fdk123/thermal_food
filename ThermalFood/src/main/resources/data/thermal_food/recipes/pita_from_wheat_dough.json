@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:dough/wheat"
+      }
+    }
+  ],
+  "pattern": [
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:dough/wheat"
+    }
+  },
+  "result": {
+    "item": "thermal_food:pita",
+    "count": 12
+  }
+}

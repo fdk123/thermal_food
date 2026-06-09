@@ -1,12 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "farmersrespite"
+      }
+    }
+  ],
   "pattern": [
     "A",
     "B"
   ],
   "key": {
     "A": {
-      "item": "thermal:tea"
+      "tag": "forge:crops/tea"
     },
     "B": {
       "item": "minecraft:water_bucket"

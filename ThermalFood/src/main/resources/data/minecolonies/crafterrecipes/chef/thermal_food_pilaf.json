@@ -1,0 +1,25 @@
+{
+  "type": "recipe",
+  "crafter": "chef_crafting",
+  "inputs": [
+    {
+      "tag": "forge:grain/rice"
+    },
+    {
+      "tag": "forge:raw_mutton"
+    },
+    {
+      "tag": "forge:crops/onion"
+    },
+    {
+      "tag": "forge:crops/bell_pepper"
+    },
+    {
+      "tag": "forge:crops/carrot"
+    }
+  ],
+  "intermediate": "minecraft:air",
+  "min-building-level": 4,
+  "result": "thermal_food:pilaf",
+  "show-tooltip": true
+}

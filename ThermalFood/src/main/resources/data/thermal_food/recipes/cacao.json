@@ -9,7 +9,7 @@
       "item": "minecraft:cocoa_beans"
     },
     "B": {
-      "item": "minecraft:milk_bucket"
+      "tag": "forge:milk"
     },
     "C": {
       "item": "minecraft:sugar"

@@ -7,7 +7,7 @@
   ],
   "key": {
     "A": {
-      "item": "thermal:tomato"
+      "tag": "forge:crops/tomato"
     },
     "B": {
       "item": "minecraft:wheat"
@@ -16,10 +16,10 @@
       "item": "thermal_food:mozzarella_cheese"
     },
     "D": {
-      "item": "thermal:bell_pepper"
+      "tag": "forge:crops/bell_pepper"
     },
     "E": {
-      "item": "thermal:onion"
+      "tag": "forge:crops/onion"
     }
   },
   "result": {

@@ -7,7 +7,7 @@
   ],
   "key": {
     "A": {
-      "item": "thermal:tea"
+      "tag": "forge:crops/tea"
     },
     "B": {
       "item": "minecraft:water_bucket"

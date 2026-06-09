@@ -7,13 +7,13 @@
   ],
   "key": {
     "A": {
-      "item": "thermal:rice"
+      "tag": "forge:grain/rice"
     },
     "B": {
       "item": "minecraft:bowl"
     },
     "C": {
-      "item": "minecraft:cooked_rabbit"
+      "tag": "forge:cooked_rabbit"
     }
   },
   "result": {

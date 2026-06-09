@@ -1,5 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:or",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "farmersdelight"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "minecolonies"
+          }
+        ]
+      }
+    }
+  ],
   "pattern": [
     "EAF",
     "DCD",
@@ -7,19 +25,19 @@
   ],
   "key": {
     "A": {
-      "item": "thermal:rice"
+      "tag": "forge:grain/rice"
     },
     "B": {
       "item": "minecraft:bowl"
     },
     "C": {
-      "item": "minecraft:cooked_mutton"
+      "tag": "forge:cooked_mutton"
     },
     "D": {
-      "item": "thermal:onion"
+      "tag": "forge:crops/onion"
     },
     "E": {
-      "item": "thermal:bell_pepper"
+      "tag": "forge:crops/bell_pepper"
     },
     "F": {
       "item": "minecraft:carrot"

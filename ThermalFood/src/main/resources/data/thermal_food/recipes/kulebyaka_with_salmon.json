@@ -10,16 +10,16 @@
       "item": "minecraft:wheat"
     },
     "B": {
-      "item": "minecraft:salmon"
+      "tag": "forge:cooked_salmon"
     },
     "C": {
       "item": "minecraft:egg"
     },
     "D": {
-      "item": "thermal:onion"
+      "tag": "forge:crops/onion"
     },
     "E": {
-      "item": "thermal:rice"
+      "tag": "forge:grain/rice"
     }
   },
   "result": {

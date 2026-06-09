@@ -7,25 +7,25 @@
   ],
   "key": {
     "A": {
-      "item": "thermal:bell_pepper"
+      "tag": "forge:crops/bell_pepper"
     },
     "B": {
       "item": "minecraft:bowl"
     },
     "C": {
-      "item": "thermal:onion"
+      "tag": "forge:crops/onion"
     },
     "D": {
-      "item": "thermal:radish"
+      "tag": "forge:crops/radish"
     },
     "E": {
-      "item": "thermal:spinach"
+      "tag": "forge:crops/spinach"
     },
     "F": {
-      "item": "thermal:tomato"
+      "tag": "forge:crops/tomato"
     },
     "G": {
-      "item": "thermal:sadiroot"
+      "tag": "forge:crops/sadiroot"
     }
   },
   "result": {
