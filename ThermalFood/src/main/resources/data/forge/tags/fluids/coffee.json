@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "thermal_food:coffee_cup",
+    "thermal_food:flowing_coffee_cup",
+    "thermal_food:iced_coffee",
+    "thermal_food:flowing_iced_coffee",
+    "thermal_food:cappuccino",
+    "thermal_food:flowing_cappuccino"
+  ]
+}

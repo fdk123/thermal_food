@@ -8,20 +8,20 @@
   ],
   "base": {
     "count": 1000,
-    "fluid": "minecraft:water"
+    "fluid": "forge:milk"
   },
   "cookingtime": 2400,
   "experience": 0.35,
   "ingredients": [
     {
-      "tag": "forge:crops/tea"
+      "item": "minecraft:cocoa_beans"
     },
     {
-      "tag": "forge:crops/tea"
+      "item": "minecraft:sugar"
     }
   ],
   "result": {
     "count": 1000,
-    "fluid": "thermal_food:black_tea"
+    "fluid": "thermal_food:cacao"
   }
 }

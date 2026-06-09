@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "thermal_food:black_tea",
+    "thermal_food:flowing_black_tea",
+    "thermal_food:black_tea_with_berries",
+    "thermal_food:flowing_black_tea_with_berries",
+    "thermal_food:cold_tea",
+    "thermal_food:flowing_cold_tea"
+  ]
+}

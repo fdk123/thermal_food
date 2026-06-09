@@ -48,6 +48,13 @@
   "item.thermal_food.iced_coffee": "Iced coffee",
   "item.thermal_food.cappuccino": "Cappuccino",
   "item.thermal_food.cacao": "Cocoa cup",
+  "fluid_type.thermal_food.black_tea": "Black tea",
+  "fluid_type.thermal_food.black_tea_with_berries": "Black tea with berries",
+  "fluid_type.thermal_food.cold_tea": "Cold tea",
+  "fluid_type.thermal_food.coffee_cup": "Coffee",
+  "fluid_type.thermal_food.iced_coffee": "Iced coffee",
+  "fluid_type.thermal_food.cappuccino": "Cappuccino",
+  "fluid_type.thermal_food.cacao": "Cocoa",
 
   "_comment": "DESCs",
 

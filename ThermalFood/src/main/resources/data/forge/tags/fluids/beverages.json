@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "thermal_food:black_tea",
+    "thermal_food:flowing_black_tea",
+    "thermal_food:black_tea_with_berries",
+    "thermal_food:flowing_black_tea_with_berries",
+    "thermal_food:cold_tea",
+    "thermal_food:flowing_cold_tea",
+    "thermal_food:coffee_cup",
+    "thermal_food:flowing_coffee_cup",
+    "thermal_food:iced_coffee",
+    "thermal_food:flowing_iced_coffee",
+    "thermal_food:cappuccino",
+    "thermal_food:flowing_cappuccino",
+    "thermal_food:cacao",
+    "thermal_food:flowing_cacao"
+  ]
+}
