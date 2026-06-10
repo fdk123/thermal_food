@@ -1,5 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "farmersdelight"
+      }
+    }
+  ],
   "pattern": [
     "ABA",
     "CDC",
@@ -21,7 +30,7 @@
   },
   "result": {
     "item": "thermal_food:khachapuri",
-    "count": 3
+    "count": 1
   }
 }
 

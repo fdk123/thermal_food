@@ -1,0 +1,45 @@
+﻿{
+    "type":  "minecraft:crafting_shaped",
+    "conditions":  [
+                       {
+                           "type":  "forge:not",
+                           "value":  {
+                                         "type":  "forge:mod_loaded",
+                                         "modid":  "farmersdelight"
+                                     }
+                       },
+                       {
+                           "type":  "forge:not",
+                           "value":  {
+                                         "type":  "forge:tag_empty",
+                                         "tag":  "forge:dough/wheat"
+                                     }
+                       }
+                   ],
+    "pattern":  [
+                    "DCE",
+                    "AAA",
+                    "BBB"
+                ],
+    "key":  {
+                "A":  {
+                          "tag":  "forge:crops/tomato"
+                      },
+                "B":  {
+                          "tag":  "forge:dough/wheat"
+                      },
+                "C":  {
+                          "item":  "thermal_food:mozzarella_cheese"
+                      },
+                "D":  {
+                          "tag":  "forge:crops/bell_pepper"
+                      },
+                "E":  {
+                          "tag":  "forge:crops/onion"
+                      }
+            },
+    "result":  {
+                   "item":  "thermal_food:pizza",
+                   "count":  6
+               }
+}

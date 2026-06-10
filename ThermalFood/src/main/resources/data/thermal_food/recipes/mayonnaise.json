@@ -5,7 +5,7 @@
   ],
   "key": {
     "A": {
-      "tag": "forge:milk"
+      "item": "thermal:sour_cream"
     },
     "B": {
       "item": "minecraft:sugar"

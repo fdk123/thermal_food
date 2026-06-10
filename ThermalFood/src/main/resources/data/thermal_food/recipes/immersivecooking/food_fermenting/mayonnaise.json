@@ -1,0 +1,31 @@
+﻿{
+    "type":  "immersivecooking:food_fermenter",
+    "conditions":  [
+                       {
+                           "type":  "forge:mod_loaded",
+                           "modid":  "immersivecooking"
+                       }
+                   ],
+    "energy":  9600,
+    "fluid":  {
+                  "amount":  1000,
+                  "tag":  "forge:milk"
+              },
+    "inputs":  [
+                   {
+                       "item":  "minecraft:sugar"
+                   },
+                   {
+                       "item":  "minecraft:egg"
+                   },
+                   {
+                        "tag":  "forge:crops/sadiroot"
+                   }
+
+               ],
+    "result":  {
+                   "item":  "thermal_food:mayonnaise",
+                   "count":  8
+               },
+    "time":  3600
+}

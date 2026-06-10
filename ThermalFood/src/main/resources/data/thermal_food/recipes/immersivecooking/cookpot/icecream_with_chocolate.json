@@ -1,0 +1,32 @@
+﻿{
+    "type":  "immersivecooking:cookpot",
+    "conditions":  [
+                       {
+                           "type":  "forge:mod_loaded",
+                           "modid":  "immersivecooking"
+                       }
+                   ],
+    "inputs":  [
+                   {
+                       "item":  "minecraft:cocoa_beans"
+                   },
+                   {
+                       "tag":  "forge:crops/peanut"
+                   },
+                   {
+                       "item":  "minecraft:wheat"
+                   },
+                   {
+                       "tag":  "forge:milk"
+                   },
+                   {
+                       "item":  "minecraft:ice"
+                   }
+               ],
+    "result":  {
+                   "item":  "thermal_food:icecream_with_chocolate",
+                   "count":  4
+               },
+    "time":  200,
+    "energy":  2000
+}

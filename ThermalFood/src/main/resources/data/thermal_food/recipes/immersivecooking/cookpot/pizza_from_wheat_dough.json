@@ -1,0 +1,39 @@
+﻿{
+    "type":  "immersivecooking:cookpot",
+    "conditions":  [
+                       {
+                           "type":  "forge:mod_loaded",
+                           "modid":  "immersivecooking"
+                       },
+                       {
+                           "type":  "forge:not",
+                           "value":  {
+                                         "type":  "forge:tag_empty",
+                                         "tag":  "forge:dough/wheat"
+                                     }
+                       }
+                   ],
+    "inputs":  [
+                   {
+                       "tag":  "forge:crops/onion"
+                   },
+                   {
+                       "tag":  "forge:crops/bell_pepper"
+                   },
+                   {
+                       "tag":  "forge:dough/wheat"
+                   },
+                   {
+                       "item":  "thermal_food:mozzarella_cheese"
+                   },
+                   {
+                       "tag":  "forge:crops/tomato"
+                   }
+               ],
+    "result":  {
+                   "item":  "thermal_food:pizza",
+                   "count":  6
+               },
+    "time":  200,
+    "energy":  2000
+}

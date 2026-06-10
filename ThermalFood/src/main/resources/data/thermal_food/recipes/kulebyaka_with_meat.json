@@ -1,5 +1,14 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "farmersdelight"
+      }
+    }
+  ],
   "pattern": [
     "EDE",
     "CBC",
@@ -10,7 +19,7 @@
       "item": "minecraft:wheat"
     },
     "B": {
-      "tag": "forge:cooked_beef"
+      "tag": "forge:raw_beef"
     },
     "C": {
       "item": "minecraft:egg"
@@ -24,7 +33,8 @@
   },
   "result": {
     "item": "thermal_food:kulebyaka_with_meat",
-    "count": 3
+    "count": 1
   }
 }
+
 

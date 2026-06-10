@@ -1,5 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "farmersdelight"
+      }
+    }
+  ],
   "pattern": [
     "DCE",
     "AAA",
@@ -24,7 +33,7 @@
   },
   "result": {
     "item": "thermal_food:pizza",
-    "count": 4
+    "count": 2
   }
 }
 

@@ -9,7 +9,7 @@ This branch targets Minecraft 1.20.1.
 - Adds 32 new food and drink items.
 - Includes cheeses, pies, ice cream variants, salads, rice dishes, pizza, pasta, tea, coffee drinks, cocoa, and more.
 - Uses Thermal Series crops and ingredients in recipes, including rice, tea, coffee, tomato, onion, bell pepper, spinach, radish, sadiroot, strawberry, and peanut.
-- Adds a dedicated Thermal Food creative tab.
+- New feature: Minecolonies, Farmers Delight (and Farmers Respite) and Immersive Cooking integration.
 - Includes English and Russian localization.
 
 ## Requirements

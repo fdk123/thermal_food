@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "  A",
-    " A ",
-    "A  "
+    "AB"
   ],
   "key": {
     "A": {
       "tag": "forge:milk"
+    },
+    "B": {
+      "item":  "thermal:glowstone_mushroom_spores"
     }
   },
   "result": {

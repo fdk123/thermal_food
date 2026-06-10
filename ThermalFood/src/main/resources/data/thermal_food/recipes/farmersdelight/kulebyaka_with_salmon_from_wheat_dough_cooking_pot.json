@@ -1,0 +1,41 @@
+﻿{
+    "type":  "farmersdelight:cooking",
+    "conditions":  [
+                       {
+                           "type":  "forge:mod_loaded",
+                           "modid":  "farmersdelight"
+                       },
+                       {
+                           "type":  "forge:not",
+                           "value":  {
+                                         "type":  "forge:tag_empty",
+                                         "tag":  "forge:dough/wheat"
+                                     }
+                       }
+                   ],
+    "cookingtime":  200,
+    "experience":  1.0,
+    "ingredients":  [
+                        {
+                            "tag":  "forge:dough/wheat"
+                        },
+                        {
+                            "tag":  "forge:raw_salmon"
+                        },
+                        {
+                            "item":  "minecraft:egg"
+                        },
+                        {
+                            "tag":  "forge:crops/onion"
+                        },
+                        {
+                            "tag":  "forge:grain/rice"
+                        }
+                    ],
+    "recipe_book_tab":  "meals",
+    "result":  {
+                   "item":  "thermal_food:kulebyaka_with_salmon",
+                   "count":  3
+               }
+}
+

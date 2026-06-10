@@ -1,0 +1,34 @@
+﻿{
+    "type":  "immersivecooking:cookpot",
+    "conditions":  [
+                       {
+                           "type":  "forge:mod_loaded",
+                           "modid":  "immersivecooking"
+                       }
+                   ],
+    "inputs":  [
+                   {
+                       "tag":  "forge:crops/bell_pepper"
+                   },
+                   {
+                       "tag":  "forge:crops/onion"
+                   },
+                   {
+                       "item":  "minecraft:carrot"
+                   },
+                   {
+                       "tag":  "forge:cooked_mutton"
+                   },
+                   {
+                       "tag":  "forge:grain/rice"
+                   }
+               ],
+    "container":  {
+                      "item":  "minecraft:bowl"
+                  },
+    "result":  {
+                   "item":  "thermal_food:pilaf"
+               },
+    "time":  200,
+    "energy":  2000
+}

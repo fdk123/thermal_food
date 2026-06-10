@@ -1,11 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "AAA"
+    "AB"
   ],
   "key": {
     "A": {
       "tag": "forge:milk"
+    },
+    "B": {
+      "item":  "thermal:gunpowder_mushroom_spores"
     }
   },
   "result": {

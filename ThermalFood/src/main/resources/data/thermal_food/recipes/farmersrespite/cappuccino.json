@@ -8,7 +8,7 @@
   ],
   "base": {
     "count": 1000,
-    "fluid": "forge:milk"
+    "fluid": "minecraft:milk"
   },
   "cookingtime": 2400,
   "experience": 0.35,

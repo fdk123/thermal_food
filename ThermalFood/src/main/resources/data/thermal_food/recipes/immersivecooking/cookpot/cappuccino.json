@@ -1,0 +1,29 @@
+﻿{
+    "type":  "immersivecooking:cookpot",
+    "conditions":  [
+                       {
+                           "type":  "forge:mod_loaded",
+                           "modid":  "immersivecooking"
+                       }
+                   ],
+    "inputs":  [
+                   {
+                       "item":  "minecraft:sugar"
+                   },
+                   {
+                       "tag":  "forge:milk"
+                   },
+                   {
+                       "tag":  "forge:crops/coffee"
+                   }
+               ],
+    "container":  {
+                      "item":  "minecraft:glass_bottle"
+                  },
+    "result":  {
+                   "item":  "thermal_food:cappuccino",
+                   "count":  3
+               },
+    "time":  200,
+    "energy":  2000
+}

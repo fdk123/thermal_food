@@ -1,11 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "A"
+    "AB"
   ],
   "key": {
     "A": {
       "tag": "forge:milk"
+    },
+    "B": {
+      "tag":  "forge:crops/sadiroot"
     }
   },
   "result": {

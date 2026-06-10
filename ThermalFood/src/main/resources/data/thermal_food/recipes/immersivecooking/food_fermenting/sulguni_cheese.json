@@ -1,0 +1,24 @@
+﻿{
+    "type":  "immersivecooking:food_fermenter",
+    "conditions":  [
+                       {
+                           "type":  "forge:mod_loaded",
+                           "modid":  "immersivecooking"
+                       }
+                   ],
+    "energy":  9600,
+    "fluid":  {
+                  "amount":  250,
+                  "tag":  "forge:milk"
+              },
+    "inputs":  [
+                    {
+                    "item":  "thermal:redstone_mushroom_spores"
+                    }
+               ],
+    "result":  {
+                   "item":  "thermal_food:sulguni_cheese",
+                   "count":  3
+               },
+    "time":  4800
+}

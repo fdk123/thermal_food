@@ -1,0 +1,17 @@
+{
+  "type": "farmersrespite:kettle_pouring",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersrespite"
+    }
+  ],
+  "amount": 250,
+  "container": {
+    "item": "minecraft:glass_bottle"
+  },
+  "fluid": "thermal_food:cacao",
+  "output": {
+    "item": "thermal_food:cacao"
+  }
+}

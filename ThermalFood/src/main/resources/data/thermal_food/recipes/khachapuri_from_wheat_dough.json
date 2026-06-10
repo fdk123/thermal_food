@@ -1,0 +1,42 @@
+﻿{
+    "type":  "minecraft:crafting_shaped",
+    "conditions":  [
+                       {
+                           "type":  "forge:not",
+                           "value":  {
+                                         "type":  "forge:mod_loaded",
+                                         "modid":  "farmersdelight"
+                                     }
+                       },
+                       {
+                           "type":  "forge:not",
+                           "value":  {
+                                         "type":  "forge:tag_empty",
+                                         "tag":  "forge:dough/wheat"
+                                     }
+                       }
+                   ],
+    "pattern":  [
+                    "ABA",
+                    "CDC",
+                    "AAA"
+                ],
+    "key":  {
+                "A":  {
+                          "tag":  "forge:dough/wheat"
+                      },
+                "B":  {
+                          "item":  "minecraft:egg"
+                      },
+                "C":  {
+                          "item":  "thermal_food:adyghe_cheese"
+                      },
+                "D":  {
+                          "item":  "thermal_food:sulguni_cheese"
+                      }
+            },
+    "result":  {
+                   "item":  "thermal_food:khachapuri",
+                   "count":  3
+               }
+}

@@ -1,0 +1,26 @@
+﻿{
+    "type":  "immersivecooking:cookpot",
+    "conditions":  [
+                       {
+                           "type":  "forge:mod_loaded",
+                           "modid":  "immersivecooking"
+                       }
+                   ],
+    "inputs":  [
+                   {
+                       "tag":  "forge:milk"
+                   },
+                   {
+                       "item":  "minecraft:wheat"
+                   },
+                   {
+                       "item":  "minecraft:ice"
+                   }
+               ],
+    "result":  {
+                   "item":  "thermal_food:icecream",
+                   "count":  4
+               },
+    "time":  200,
+    "energy":  2000
+}

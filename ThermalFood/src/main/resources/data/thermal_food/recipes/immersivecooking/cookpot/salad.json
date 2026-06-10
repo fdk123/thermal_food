@@ -1,0 +1,37 @@
+﻿{
+    "type":  "immersivecooking:cookpot",
+    "conditions":  [
+                       {
+                           "type":  "forge:mod_loaded",
+                           "modid":  "immersivecooking"
+                       }
+                   ],
+    "inputs":  [
+                   {
+                       "tag":  "forge:crops/spinach"
+                   },
+                   {
+                       "tag":  "forge:crops/radish"
+                   },
+                   {
+                       "tag":  "forge:crops/sadiroot"
+                   },
+                   {
+                       "tag":  "forge:crops/tomato"
+                   },
+                   {
+                       "tag":  "forge:crops/onion"
+                   },
+                   {
+                       "tag":  "forge:crops/bell_pepper"
+                   }
+               ],
+    "container":  {
+                      "item":  "minecraft:bowl"
+                  },
+    "result":  {
+                   "item":  "thermal_food:salad"
+               },
+    "time":  200,
+    "energy":  2000
+}

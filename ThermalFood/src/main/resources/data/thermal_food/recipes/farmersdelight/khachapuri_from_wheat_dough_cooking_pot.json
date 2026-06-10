@@ -1,0 +1,37 @@
+﻿{
+    "type":  "farmersdelight:cooking",
+    "conditions":  [
+                       {
+                           "type":  "forge:mod_loaded",
+                           "modid":  "farmersdelight"
+                       },
+                       {
+                           "type":  "forge:not",
+                           "value":  {
+                                         "type":  "forge:tag_empty",
+                                         "tag":  "forge:dough/wheat"
+                                     }
+                       }
+                   ],
+    "cookingtime":  200,
+    "experience":  1.0,
+    "ingredients":  [
+                        {
+                            "tag":  "forge:dough/wheat"
+                        },
+                        {
+                            "item":  "minecraft:egg"
+                        },
+                        {
+                            "item":  "thermal_food:adyghe_cheese"
+                        },
+                        {
+                            "item":  "thermal_food:sulguni_cheese"
+                        }
+                    ],
+    "recipe_book_tab":  "meals",
+    "result":  {
+                   "item":  "thermal_food:khachapuri",
+                   "count":  3
+               }
+}
