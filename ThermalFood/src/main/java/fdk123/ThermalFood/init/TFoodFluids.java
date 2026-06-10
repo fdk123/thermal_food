@@ -3,12 +3,15 @@ package fdk123.ThermalFood.init;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluid;
+import net.minecraftforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fluids.FluidType;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Consumer;
 
 import static fdk123.ThermalFood.ThermalFood.MOD_ID;
 import static fdk123.ThermalFood.init.TFoodIDs.*;
@@ -58,7 +61,25 @@ public class TFoodFluids {
                 .canDrown(false)
                 .density(1000)
                 .viscosity(1000)
-                .temperature(300)));
+                .temperature(300)) {
+            @Override
+            public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
+                consumer.accept(new IClientFluidTypeExtensions() {
+                    private final ResourceLocation stillTexture = new ResourceLocation(MOD_ID, "block/fluid/" + name + "_still");
+                    private final ResourceLocation flowingTexture = new ResourceLocation(MOD_ID, "block/fluid/" + name + "_flow");
+
+                    @Override
+                    public ResourceLocation getStillTexture() {
+                        return stillTexture;
+                    }
+
+                    @Override
+                    public ResourceLocation getFlowingTexture() {
+                        return flowingTexture;
+                    }
+                });
+            }
+        });
     }
 
     private static RegistryObject<FlowingFluid> source(String name, RegistryObject<FluidType> type) {
